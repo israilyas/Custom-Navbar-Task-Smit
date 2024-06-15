@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navbar Task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            ul li a:hover{
+                color: black;
+            }
+            ul li a{
+                color: white;
+            }
+            ul>li{
+                list-style: none;
+            }
+            #dropdownMenuButton1:hover{
+                color: black;
+            }
+            @media (max-width:992px) {
+                .navbar{
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+                .social-links{
+                    display: none;
+                }
+            }
+        </style>
+</head>
+
+<body>
+    <header class="" style="background-color: #FF6961;">
+
+        <nav class=" d-flex flex-column flex-lg-row align-items-center justify-content-between">
+
+            <div class="logo">
+                <div class="d-flex align-items-center mx-5">
+                    <img src="asset/logo.svg" alt="" width="100px">
+                    <span class="text-light fw-bold fs-4">TaskNest</span>
+                </div>
+            </div>
+
+            <ul class="d-flex flex-lg-row flex-column align-items-center">
+                <li class=""><a href="#" class=" mx-3 text-decoration-none">Home</a></li>
+                <li class=""><a href="#" class=" mx-3 text-decoration-none">About</a></li>
+                <li class=""><a href="#" class=" mx-3 text-decoration-none">Contact</a></li>
+                <li class="">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"  style="background-color: #FF6961;border: none;">Dropdown button</button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><button class="btn btn-outline-primary">Shop Now</button></a></li>
+
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="social-links me-5">
+                <ion-icon name="logo-facebook" style="color:#1877F2; width: 25px; height: 25px;"></ion-icon>
+                <ion-icon name="logo-instagram" style="background: linear-gradient(45deg, 
+                #f09433 0%, 
+                #e6683c 25%, 
+                #dc2743 50%, 
+                #cc2366 75%, 
+                #bc1888 100%);
+                color: white; border-radius: 20%; width: 25px; height: 25px;"></ion-icon>
+                <ion-icon name="logo-linkedin" style="color:#0077B5; width: 25px; height: 25px;"></ion-icon>
+                <ion-icon name="logo-twitter"  style="color:#1DA1F2; width: 25px; height: 25px;"></ion-icon>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <!-- For Icons JS -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
